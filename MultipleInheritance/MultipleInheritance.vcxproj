@@ -127,9 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Car.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleInSquare.h" />
+    <ClInclude Include="Doors.h" />
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="Square.h" />
+    <ClInclude Include="Wheels.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

@@ -1,8 +1,9 @@
 #include <iostream>
 #include "CircleInSquare.h"
+#include "Car.h"
 
 int main() {
-    CircleInSquare figure(10);
+    /*CircleInSquare figure(10);
 
     std::cout << "Square:" << std::endl;
     std::cout << "Side: " << figure.getSide() << std::endl;
@@ -20,7 +21,25 @@ int main() {
     figure.setSide(6);
 
     std::cout << "New square side: " << figure.getSide() << std::endl;
-    std::cout << "New circle radius: " << figure.getRadius() << std::endl;
+    std::cout << "New circle radius: " << figure.getRadius() << std::endl;*/
+
+    Car myCar;
+
+    std::cout << "Default car status:";
+    myCar.displayStatus();
+
+    myCar.start();
+    myCar.unlock();
+    myCar.setColor("Red");
+    myCar.setWheelSize(19.0);
+
+    std::cout << "\nAfter modifications:";
+    myCar.displayStatus();
+
+    Car customCar("BMW", "M5", 2024, "Blue", 4.4, "Petrol", 600, 20.0, 4);
+
+    std::cout << "\nCustom car status:";
+    customCar.displayStatus();
 
     return 0;
 }
