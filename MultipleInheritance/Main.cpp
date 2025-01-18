@@ -1,9 +1,10 @@
 #include <iostream>
 #include "CircleInSquare.h"
 #include "Car.h"
+#include "child2.h"
 
 int main() {
-    CircleInSquare figure(10);
+    /*CircleInSquare figure(10);
 
     std::cout << "Square:" << std::endl;
     std::cout << "Side: " << figure.getSide() << std::endl;
@@ -41,7 +42,36 @@ int main() {
     Car customCar("BMW", "M5", 2024, "Blue", 4.4, "Petrol", 600, 20.0, 4);
 
     std::cout << "\nCustom car status:";
-    customCar.displayStatus();
+    customCar.displayStatus();*/
+
+    std::cout << "Testing base class:" << std::endl;
+    base<int, double> b(10, 3.14);
+    b.display();
+
+    std::cout << "\nTesting child class:" << std::endl;
+    child<int, double, std::string, char> c(100, 2.718, "Hello", 'A');
+    c.display();
+
+    std::cout << "\nChange child values:" << std::endl;
+    c.setValue1(200);
+    c.setValue2(3.333);
+    c.setValue3("World");
+    c.setValue4('B');
+    c.display();
+
+    std::cout << "\nTesting child2 class:" << std::endl;
+    child2<int, double, std::string, char, bool, float>
+        c2(1000, 1.414, "Test", 'X', true, 3.33f);
+    c2.display();
+
+    std::cout << "\nChange child2 values: " << std::endl;
+    c2.setValue1(2000);
+    c2.setValue2(2.828);
+    c2.setValue3("Modified");
+    c2.setValue4('Y');
+    c2.setValue5(false);
+    c2.setValue6(6.66f);
+    c2.display();
 
     return 0;
 }
