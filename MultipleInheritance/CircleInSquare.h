@@ -2,7 +2,7 @@
 #include "Circle.h"
 #include "Square.h"
 
-class CircleInSquare : public Circle, public Square {
+class CircleInSquare : public virtual Circle, public virtual Square {
 public:
     CircleInSquare(double side) : Square(side) {
         radius = side / 2;

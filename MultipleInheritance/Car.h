@@ -4,7 +4,7 @@
 #include "Wheels.h"
 #include "Doors.h"
 
-class Car : public Engine, public Wheels, public Doors {
+class Car : public virtual Engine, public virtual Wheels, public virtual Doors {
 private:
     std::string brand;
     std::string model;

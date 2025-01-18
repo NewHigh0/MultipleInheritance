@@ -3,7 +3,7 @@
 #include "Car.h"
 
 int main() {
-    /*CircleInSquare figure(10);
+    CircleInSquare figure(10);
 
     std::cout << "Square:" << std::endl;
     std::cout << "Side: " << figure.getSide() << std::endl;
@@ -21,7 +21,9 @@ int main() {
     figure.setSide(6);
 
     std::cout << "New square side: " << figure.getSide() << std::endl;
-    std::cout << "New circle radius: " << figure.getRadius() << std::endl;*/
+    std::cout << "New circle radius: " << figure.getRadius() << std::endl;
+
+    std::cout << std::endl;
 
     Car myCar;
 
